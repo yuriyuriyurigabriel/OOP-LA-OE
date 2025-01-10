@@ -1,0 +1,9 @@
+class MobileLegendHero:
+    def __init__(self, name, role):
+        self.name = name
+        self.role = role
+
+hero = MobileLegendHero("Mathilda","ROAM")
+
+print("Hero Name:", hero.name)
+print("Hero Role:", hero.role)
