@@ -1,0 +1,18 @@
+class FavoriteFood:
+    def __init__(self, name, ingredients):
+        self.name = name
+        self._ingredients = ingredients
+
+    def __str__(self):
+        return f"{self.name} is made with: {', '.join(self._ingredients)}"
+
+    def get_ingredients(self):
+        return self.__ingredients
+
+Adobo = FavoriteFood("Adobo", ["Pork", "soy sauce", "vinegar", "garlic"])
+Sinigang = FavoriteFood("Sinigang", ["Pork", "Labanos", "tamarind", "okra"])
+Paksiw = FavoriteFood("Paksiw", ["Dalagang bukid", "vinegar", "garlic", "Sili green"])
+
+print(Adobo._ingredients)
+print(Sinigang)
+print(Paksiw)
