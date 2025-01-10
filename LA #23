@@ -1,0 +1,16 @@
+class AnimeCharacter:
+    def __init__(self, name, ability):
+        self.name = name
+        self.ability = ability
+    
+    def introduce(self, func):
+        def wrapper():
+            print("Introducing!")
+            func()
+            print("Rimuru is so cool!")
+        return wrapper
+    def character_intro(self):
+        print(f"I am {Rimuru.name} and I can use {Rimuru.ability}.")
+    
+Rimuru = AnimeCharacter("Rimuru", "Beelzebub")
+Rimuru.introduce(Rimuru.character_intro)()    
